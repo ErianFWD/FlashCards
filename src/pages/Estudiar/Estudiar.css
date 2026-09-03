@@ -1,0 +1,41 @@
+.estudiar-pagina { background: linear-gradient(180deg, var(--beige-50), var(--amarillo-100)); }
+.estudiar-contenedor { max-width: 68rem; }
+.preparar-sesion, .resultado-sesion { margin: 0 auto; max-width: 34rem; padding: 2rem; text-align: center; }
+.preparar-sesion__icono, .resultado-sesion__sello { align-items: center; background: var(--beige-100); border: 1px solid var(--beige-300); border-radius: 1rem; color: var(--amarillo-600); display: flex; height: 4.2rem; justify-content: center; margin: 0 auto 1.1rem; width: 4.2rem; }
+.preparar-sesion h2, .resultado-sesion h2 { font-family: Georgia, serif; font-size: 2rem; margin: 0.4rem 0 0.7rem; }
+.preparar-sesion > p, .resultado-sesion > p { color: var(--cafe-500); line-height: 1.65; }
+.preparar-sesion label { margin: 1.4rem auto 0; max-width: 18rem; text-align: left; }
+.preparar-sesion__resumen { margin: 1.2rem 0; }
+.preparar-sesion__resumen strong, .preparar-sesion__resumen span { display: block; }
+.preparar-sesion__resumen strong { color: var(--cafe-800); font-family: Georgia, serif; font-size: 2.3rem; }
+.preparar-sesion__resumen span { color: var(--cafe-500); font-size: 0.75rem; }
+.resultado-sesion__acciones { display: flex; gap: 0.7rem; justify-content: center; margin-top: 1.2rem; }
+.estudio-layout { align-items: start; display: grid; gap: 1.25rem; grid-template-columns: minmax(0, 1fr) 15rem; }
+.progreso-estudio { color: var(--cafe-600); font-size: 0.78rem; font-weight: 800; margin-bottom: 0.8rem; }
+.progreso-estudio > div { background: var(--beige-300); border-radius: 999px; height: 0.45rem; margin-top: 0.45rem; overflow: hidden; }
+.progreso-estudio > div > span { background: var(--amarillo-600); display: block; height: 100%; transition: width 220ms ease; }
+.tarjeta-estudio { align-items: flex-start; background: linear-gradient(155deg, #fffdf8, #f0dfc4); border: 1px solid var(--beige-300); border-radius: 1.6rem; box-shadow: 0 10px 0 #d2b78e, 0 24px 55px rgba(64, 38, 25, 0.18); color: var(--cafe-900); cursor: pointer; display: flex; flex-direction: column; height: 28rem; justify-content: space-between; padding: clamp(1.5rem, 4vw, 2.5rem); text-align: left; transition: transform 180ms ease; width: 100%; }
+.tarjeta-estudio:hover { transform: translateY(-3px); }
+.tarjeta-estudio--volteada { background: linear-gradient(155deg, var(--amarillo-200), var(--amarillo-500)); border-color: var(--amarillo-600); box-shadow: 0 10px 0 var(--amarillo-700), 0 24px 55px rgba(138, 90, 8, 0.25); color: var(--cafe-900); }
+.tarjeta-estudio > span { background: rgba(201,151,62,0.15); border-radius: 999px; color: var(--amarillo-600); font-size: 0.7rem; font-weight: 900; padding: 0.4rem 0.65rem; }
+.tarjeta-estudio--volteada > span { color: var(--amarillo-700); }
+.tarjeta-estudio > small { font-size: 0.72rem; font-weight: 900; letter-spacing: 0.1em; margin-top: auto; text-transform: uppercase; }
+.tarjeta-estudio > strong { font-family: Georgia, serif; font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.42; margin: 1rem 0 auto; }
+.tarjeta-estudio > em { align-items: center; display: flex; font-size: 0.75rem; font-style: normal; gap: 0.4rem; opacity: 0.7; }
+.evaluacion-estudio { display: grid; gap: 0.8rem; grid-template-columns: 1fr 1fr; margin-top: 1.5rem; }
+.resumen-en-vivo { padding: 1.2rem; }
+.resumen-en-vivo h2 { font-family: Georgia, serif; font-size: 1.2rem; margin: 0 0 1rem; }
+.resumen-en-vivo > div { align-items: center; border-bottom: 1px solid var(--beige-200); display: flex; justify-content: space-between; padding: 0.8rem 0; }
+.resumen-en-vivo span { color: var(--cafe-500); font-size: 0.77rem; }
+.resumen-en-vivo strong { color: var(--cafe-800); }
+.enlace-peligro { background: transparent; border: 0; color: var(--rojo-700); cursor: pointer; font-size: 0.75rem; font-weight: 850; margin-top: 1.2rem; padding: 0; text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .estudio-layout { grid-template-columns: 1fr; }
+  .resumen-en-vivo { order: -1; }
+}
+
+@media (max-width: 480px) {
+  .evaluacion-estudio, .resultado-sesion__acciones { grid-template-columns: 1fr; flex-direction: column; }
+  .tarjeta-estudio { height: 24rem; }
+}

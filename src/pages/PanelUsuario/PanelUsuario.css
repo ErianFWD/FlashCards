@@ -1,0 +1,12 @@
+.metricas { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-bottom: 1.3rem; }
+.metrica { background: linear-gradient(155deg, var(--blanco), var(--beige-100)); border: 1px solid var(--beige-200); border-radius: 1.15rem; box-shadow: var(--sombra-suave); padding: 1.3rem; }
+.metrica span, .metrica strong, .metrica small { display: block; }
+.metrica span { color: var(--cafe-500); font-size: 0.72rem; font-weight: 850; text-transform: uppercase; }
+.metrica strong { color: var(--cafe-900); font-family: Georgia, serif; font-size: 2.25rem; margin: 0.35rem 0 0.15rem; }
+.metrica small { color: var(--cafe-500); }
+.historial-panel { padding: 1.3rem; }
+.porcentaje-tabla { background: var(--beige-100); border-radius: 999px; color: var(--cafe-700); font-weight: 900; padding: 0.35rem 0.6rem; }
+
+@media (max-width: 700px) {
+  .metricas { grid-template-columns: 1fr; }
+}

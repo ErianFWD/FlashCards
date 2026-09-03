@@ -1,0 +1,66 @@
+.flashcard-item {
+  background: var(--blanco);
+  border: 1px solid var(--beige-200);
+  border-radius: 1.25rem;
+  box-shadow: var(--sombra-suave);
+  display: flex;
+  flex-direction: column;
+  min-height: 22rem;
+  overflow: hidden;
+}
+
+.flashcard-item--inactiva { opacity: 0.72; }
+
+.flashcard-item__meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 1rem 1rem 0;
+}
+
+.flashcard-item__meta > span {
+  background: var(--beige-100);
+  border-radius: 999px;
+  color: var(--cafe-600);
+  font-size: 0.69rem;
+  font-weight: 850;
+  padding: 0.35rem 0.58rem;
+}
+
+.flashcard-item__meta .etiqueta-inactiva { background: var(--rojo-100); color: var(--rojo-700); }
+
+.flashcard-cuerpo {
+  align-items: flex-start;
+  background: linear-gradient(160deg, #fffdf8 20%, #f7ead6 100%);
+  border: 0;
+  color: var(--cafe-900);
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.8rem 1rem 1rem;
+  min-height: 14rem;
+  padding: 1.35rem;
+  text-align: left;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: inset 0 0 0 1px var(--beige-200), 0 5px 0 var(--beige-300);
+  border-radius: 1rem;
+}
+
+.flashcard-cuerpo:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1px var(--beige-300), 0 7px 0 var(--beige-300); }
+.flashcard-cuerpo--volteada { background: linear-gradient(160deg, var(--amarillo-200), var(--amarillo-300)); color: var(--cafe-900); }
+.flashcard-cuerpo__lado { color: var(--amarillo-600); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
+.flashcard-cuerpo strong { font-family: Georgia, serif; font-size: 1.1rem; line-height: 1.45; }
+.flashcard-cuerpo__giro { align-items: center; display: inline-flex; font-size: 0.72rem; gap: 0.4rem; opacity: 0.75; }
+
+.flashcard-item__acciones {
+  align-items: center;
+  border-top: 1px solid var(--beige-200);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem 1rem;
+}
+
+.flashcard-item__acciones .boton-icono { margin-left: auto; }

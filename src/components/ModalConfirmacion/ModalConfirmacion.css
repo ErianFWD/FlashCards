@@ -1,0 +1,96 @@
+.modal-fondo {
+  align-items: center;
+  animation: aparecer 170ms ease-out;
+  backdrop-filter: blur(7px);
+  background: rgba(38, 22, 15, 0.7);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1.25rem;
+  position: fixed;
+  z-index: 200;
+}
+
+.confirmacion-3d {
+  animation: elevar 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: linear-gradient(145deg, #fffdf8, #efe1ca);
+  border: 1px solid #d7bea0;
+  border-radius: 1.4rem;
+  box-shadow:
+    0 8px 0 #a78969,
+    0 16px 0 rgba(74, 43, 29, 0.25),
+    0 30px 70px rgba(31, 16, 9, 0.42),
+    inset 0 1px 0 #ffffff;
+  max-width: 29rem;
+  padding: 2rem;
+  position: relative;
+  transform: translateY(-7px);
+  width: 100%;
+}
+
+.confirmacion-3d::after {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+  content: '';
+  height: 1px;
+  left: 1.2rem;
+  position: absolute;
+  right: 1.2rem;
+  top: 0.7rem;
+}
+
+.confirmacion-3d__icono {
+  align-items: center;
+  background: var(--rojo-100);
+  border: 1px solid #efb2aa;
+  border-radius: 1rem;
+  box-shadow: 0 5px 0 #d29a92;
+  color: var(--rojo-700);
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
+  margin-bottom: 1.35rem;
+  width: 3.5rem;
+}
+
+.confirmacion-3d__etiqueta {
+  color: var(--rojo-700);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.confirmacion-3d h2 {
+  color: var(--cafe-900);
+  font-family: Georgia, serif;
+  font-size: clamp(1.55rem, 5vw, 2rem);
+  margin: 0.45rem 0 0.75rem;
+}
+
+.confirmacion-3d p {
+  color: var(--cafe-600);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.confirmacion-3d__acciones {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+  margin-top: 1.65rem;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes elevar {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to { opacity: 1; transform: translateY(-7px) scale(1); }
+}
+
+@media (max-width: 440px) {
+  .confirmacion-3d__acciones { flex-direction: column-reverse; }
+  .confirmacion-3d__acciones .boton { width: 100%; }
+}

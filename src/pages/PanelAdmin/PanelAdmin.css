@@ -1,0 +1,13 @@
+.panel-acciones { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+.usuarios-panel { padding: 1.3rem; }
+.usuarios-panel td small { color: var(--cafe-500); display: block; font-size: 0.68rem; margin-top: 0.2rem; }
+.estado-cuenta { border-radius: 999px; font-size: 0.7rem; font-weight: 900; padding: 0.35rem 0.6rem; }
+.estado-cuenta--activo { background: #e7f1e8; color: #35623d; }
+.estado-cuenta--inactivo { background: var(--rojo-100); color: var(--rojo-700); }
+.acciones-tabla { align-items: center; display: flex; gap: 0.6rem; }
+.enlace-accion { background: transparent; border: 0; color: var(--cafe-700); cursor: pointer; font-size: 0.75rem; font-weight: 850; padding: 0; text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .panel-acciones { width: 100%; }
+  .panel-acciones .boton { flex: 1; }
+}
