@@ -1,0 +1,158 @@
+{
+  "usuarios": [
+    {
+      "id": "admin-1",
+      "nombre": "Administración Flashcard",
+      "usuario": "admin",
+      "correo": "admin@flashcard.com",
+      "contrasena": "flashadmin2026",
+      "rol": "administrador",
+      "activo": true
+    },
+    {
+      "id": "usuario-1",
+      "nombre": "Estudiante Demo",
+      "usuario": "estudiante",
+      "correo": "estudiante@flashcard.com",
+      "contrasena": "estudiar2026",
+      "rol": "usuario",
+      "activo": true
+    },
+    {
+      "id": "usuario-2",
+      "nombre": "María Solano",
+      "usuario": "maria",
+      "correo": "maria@flashcard.com",
+      "contrasena": "maria2026",
+      "rol": "usuario",
+      "activo": true
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "card-1",
+      "pregunta": "¿Qué es la fotosíntesis?",
+      "respuesta": "Es el proceso por el que plantas, algas y algunas bacterias convierten energía luminosa en energía química, usando dióxido de carbono y agua.",
+      "materia": "Biología",
+      "nivel": "Básico",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-20T15:00:00.000Z"
+    },
+    {
+      "id": "card-2",
+      "pregunta": "¿Cuál es la función principal de la mitocondria?",
+      "respuesta": "Producir ATP mediante la respiración celular para suministrar energía utilizable a la célula.",
+      "materia": "Biología",
+      "nivel": "Intermedio",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-20T15:05:00.000Z"
+    },
+    {
+      "id": "card-3",
+      "pregunta": "¿Cómo se calcula el área de un círculo?",
+      "respuesta": "Se multiplica π por el cuadrado del radio: A = πr².",
+      "materia": "Matemáticas",
+      "nivel": "Básico",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-21T16:00:00.000Z"
+    },
+    {
+      "id": "card-4",
+      "pregunta": "¿Qué representa la pendiente en una función lineal?",
+      "respuesta": "Representa cuánto cambia la variable dependiente por cada unidad que aumenta la variable independiente.",
+      "materia": "Matemáticas",
+      "nivel": "Intermedio",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-21T16:05:00.000Z"
+    },
+    {
+      "id": "card-5",
+      "pregunta": "¿En qué año inició la Revolución francesa?",
+      "respuesta": "Inició en 1789, con hechos como la toma de la Bastilla el 14 de julio.",
+      "materia": "Historia",
+      "nivel": "Básico",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-22T14:00:00.000Z"
+    },
+    {
+      "id": "card-6",
+      "pregunta": "¿Qué fue la Revolución Industrial?",
+      "respuesta": "Fue una transformación económica y social impulsada por la mecanización, las fábricas y nuevas fuentes de energía desde el siglo XVIII.",
+      "materia": "Historia",
+      "nivel": "Intermedio",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-22T14:05:00.000Z"
+    },
+    {
+      "id": "card-7",
+      "pregunta": "¿Qué es una función en JavaScript?",
+      "respuesta": "Es un bloque reutilizable de instrucciones que puede recibir parámetros y devolver un resultado.",
+      "materia": "Programación",
+      "nivel": "Básico",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-23T13:00:00.000Z"
+    },
+    {
+      "id": "card-8",
+      "pregunta": "¿Para qué sirve useState en React?",
+      "respuesta": "Permite guardar y actualizar estado local dentro de un componente funcional, provocando un nuevo render cuando cambia.",
+      "materia": "Programación",
+      "nivel": "Intermedio",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-23T13:05:00.000Z"
+    },
+    {
+      "id": "card-9",
+      "pregunta": "What is the simple past of go?",
+      "respuesta": "The simple past of go is went.",
+      "materia": "Inglés",
+      "nivel": "Básico",
+      "activa": true,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-24T12:00:00.000Z"
+    },
+    {
+      "id": "card-10",
+      "pregunta": "¿Cuándo se usa present perfect en inglés?",
+      "respuesta": "Se usa para experiencias o acciones pasadas relacionadas con el presente, normalmente sin indicar un momento terminado específico.",
+      "materia": "Inglés",
+      "nivel": "Intermedio",
+      "activa": false,
+      "creadaPor": "admin-1",
+      "fechaCreacion": "2026-08-24T12:05:00.000Z"
+    }
+  ],
+  "sesiones": [
+    {
+      "id": "sesion-1",
+      "usuarioId": "usuario-1",
+      "usuarioNombre": "Estudiante Demo",
+      "materia": "Biología",
+      "fecha": "2026-09-01T16:30:00.000Z",
+      "total": 2,
+      "dominadas": 1,
+      "repasar": 1,
+      "porcentaje": 50
+    },
+    {
+      "id": "sesion-2",
+      "usuarioId": "usuario-1",
+      "usuarioNombre": "Estudiante Demo",
+      "materia": "Matemáticas",
+      "fecha": "2026-09-02T18:10:00.000Z",
+      "total": 2,
+      "dominadas": 2,
+      "repasar": 0,
+      "porcentaje": 100
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

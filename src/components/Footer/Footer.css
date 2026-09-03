@@ -1,0 +1,24 @@
+.pie {
+  background: linear-gradient(135deg, var(--amarillo-300), var(--amarillo-500));
+  border-top: 1px solid var(--amarillo-600);
+  color: var(--cafe-900);
+  margin-top: auto;
+  padding: 2rem 0;
+}
+
+.pie__interior {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.pie strong,
+.pie span { display: block; }
+.pie strong { color: var(--cafe-900); font-family: Georgia, serif; font-size: 1.2rem; }
+.pie__interior > div > span { color: var(--cafe-700); font-size: 0.82rem; margin-top: 0.25rem; }
+.pie__sello { align-items: center; display: inline-flex !important; font-size: 0.8rem; gap: 0.45rem; }
+
+@media (max-width: 600px) {
+  .pie__interior { align-items: flex-start; flex-direction: column; }
+}

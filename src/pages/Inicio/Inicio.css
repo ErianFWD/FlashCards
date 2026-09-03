@@ -1,0 +1,41 @@
+.hero { background: radial-gradient(circle at 75% 25%, var(--amarillo-200) 0, transparent 28%), linear-gradient(135deg, var(--beige-50) 0%, var(--beige-200) 100%); overflow: hidden; padding: clamp(4rem, 9vw, 7.5rem) 0; }
+.hero__interior { align-items: center; display: grid; gap: clamp(2rem, 7vw, 6rem); grid-template-columns: 1.05fr 0.95fr; }
+.hero__contenido h1 { font-family: Georgia, serif; font-size: clamp(2.7rem, 6vw, 5.3rem); letter-spacing: -0.045em; line-height: 0.98; margin: 0.75rem 0 1.35rem; max-width: 12ch; }
+.hero__contenido > p { color: var(--cafe-600); font-size: clamp(1rem, 2vw, 1.16rem); line-height: 1.75; max-width: 38rem; }
+.hero__acciones { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
+.hero__confianza { color: var(--cafe-600); display: flex; flex-wrap: wrap; font-size: 0.78rem; font-weight: 750; gap: 1rem; margin-top: 1.5rem; }
+.hero__confianza span { align-items: center; display: inline-flex; gap: 0.35rem; }
+.hero__visual { height: 28rem; perspective: 900px; position: relative; }
+.hero-tarjeta { border-radius: 1.7rem; inset: 1.5rem 0 0 2rem; position: absolute; }
+.hero-tarjeta--atras { background: var(--beige-300); transform: rotate(9deg) translate(1.5rem, 0.5rem); }
+.hero-tarjeta--medio { background: var(--amarillo-200); transform: rotate(4deg) translate(0.7rem, 0.25rem); }
+.hero-tarjeta--principal { align-items: flex-start; background: linear-gradient(155deg, var(--amarillo-300), var(--amarillo-500)); border: 1px solid var(--amarillo-600); box-shadow: 0 25px 65px rgba(138, 90, 8, 0.28); color: var(--cafe-900); display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; transform: rotate(-2deg); }
+.hero-tarjeta--principal > span { background: rgba(255,255,255,0.35); border: 1px solid rgba(82,53,39,0.15); border-radius: 999px; color: var(--amarillo-700); font-size: 0.72rem; font-weight: 850; padding: 0.4rem 0.7rem; }
+.hero-tarjeta--principal .icono { color: var(--amarillo-700); }
+.hero-tarjeta--principal strong { font-family: Georgia, serif; font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.35; }
+.hero-tarjeta--principal small { color: var(--cafe-700); }
+.seccion__cabecera { margin-bottom: 2rem; max-width: 42rem; }
+.seccion__cabecera h2 { font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); margin: 0.55rem 0 0.65rem; }
+.seccion__cabecera p { color: var(--cafe-500); line-height: 1.7; }
+.pasos-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.paso { position: relative; }
+.paso > .icono { color: var(--amarillo-600); margin-top: 1.2rem; }
+.paso h3 { font-family: Georgia, serif; margin: 1rem 0 0.45rem; }
+.paso p { color: var(--cafe-500); font-size: 0.9rem; line-height: 1.65; margin: 0; }
+.seccion--amarilla { background: linear-gradient(135deg, var(--amarillo-300), var(--amarillo-500)); color: var(--cafe-900); }
+.bloque-negocio { align-items: center; display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; }
+.bloque-negocio h2 { font-family: Georgia, serif; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.15; margin: 0.7rem 0 0; }
+.bloque-negocio__datos { display: grid; gap: 0.8rem; grid-template-columns: repeat(3, 1fr); }
+.bloque-negocio__datos span { background: rgba(255,255,255,0.42); border: 1px solid rgba(82,53,39,0.14); border-radius: 1rem; color: var(--cafe-700); font-size: 0.75rem; padding: 1rem; }
+.bloque-negocio__datos strong { color: var(--cafe-900); display: block; font-family: Georgia, serif; font-size: 1.7rem; margin-bottom: 0.25rem; }
+
+@media (max-width: 820px) {
+  .hero__interior, .bloque-negocio { grid-template-columns: 1fr; }
+  .hero__visual { height: 24rem; max-width: 31rem; width: 100%; }
+  .pasos-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .hero-tarjeta { inset: 1rem 0.5rem 0; }
+  .bloque-negocio__datos { grid-template-columns: 1fr; }
+}

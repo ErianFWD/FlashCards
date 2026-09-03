@@ -1,0 +1,13 @@
+.analisis-resumen { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-bottom: 1.2rem; }
+.analisis-resumen .tarjeta { padding: 1.25rem; }
+.analisis-resumen span, .analisis-resumen strong { display: block; }
+.analisis-resumen span { color: var(--cafe-500); font-size: 0.72rem; font-weight: 850; text-transform: uppercase; }
+.analisis-resumen strong { color: var(--cafe-900); font-family: Georgia, serif; font-size: 2.2rem; margin-top: 0.35rem; }
+.analisis-graficos { display: grid; gap: 1.2rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grafico-tarjeta { min-width: 0; padding: 1.25rem; }
+.grafico-contenedor { height: 22rem; margin-top: 1rem; }
+.recharts-default-tooltip { border: 1px solid var(--beige-300) !important; border-radius: 0.7rem; }
+
+@media (max-width: 820px) {
+  .analisis-resumen, .analisis-graficos { grid-template-columns: 1fr; }
+}
